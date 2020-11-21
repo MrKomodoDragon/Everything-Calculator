@@ -151,7 +151,7 @@ def basicTingz():
         solution = eval(equation)
         print(solution)
     if optType == "2":
-        equation = input("Input your equation here (Make sure to use this sign \"-\" for adding!): ")
+        equation = input("Input your equation here (Make sure to use this sign \"-\" for subtraction!): ")
         solution = eval(equation)
         print(solution)
 calcType = input("What Calculation Mode would you like to do? Press 1 for graphing, and 2 for basic calculations. ")
