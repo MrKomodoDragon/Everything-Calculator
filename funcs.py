@@ -164,8 +164,4 @@ def basicTingz():
         equation = input("Input your equation here (Make sure to use this sign \"/\" for multiplication!): ")
         solution = eval(equation)
         print(solution)
-calcType = input("What Calculation Mode would you like to do? Press 1 for graphing, and 2 for basic calculations. ")
-if calcType == "1":
-    graph()
-elif calcType == "2":
-    basicTingz()
+
