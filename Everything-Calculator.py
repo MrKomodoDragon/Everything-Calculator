@@ -1,5 +1,7 @@
 from matplotlib.pyplot import *
 from numpy import *
+from sympy.solvers import solve
+from sympy import Symbol
 
 def graph():
     graphType = input("What kind of graph would you like: linear, quadratic, cubic, or quartic? Type 1 for linear, 2 for quadratic, 3 for cubic, or 4 for quartic. ")
