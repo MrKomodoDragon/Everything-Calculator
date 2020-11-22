@@ -17,7 +17,7 @@ def graph():
         grid(b=True, which='major', color='#666666', linestyle='-')
         show()
     elif graphType == "2":
-        formatType = input("What format woud you like to enter the values for the function: ax² + bx + c or a(x - h)² + k? Type 1 for the first option or 2 for the second option. ")
+        formatType = input("What format woud you like to enter the values for the function: ax^2 + bx + c or a(x - h)^2 + k? Type 1 for the first option or 2 for the second option. ")
         range1 = int(input("What is the first number of the range? "))
         range2 = int(input("What is the second number of the range? "))
     if formatType == "1":
