@@ -1,5 +1,6 @@
 from matplotlib.pyplot import *
 from numpy import *
+import math
 def graph():
     graphType = input("What kind of graph would you like: linear, quadratic, cubic, or quartic? Type 1 for linear, 2 for quadratic, 3 for cubic, or 4 for quartic. ")
     if graphType == "1":
@@ -161,3 +162,7 @@ def basicTingz():
         equation = input("Input your equation here (Make sure to use this sign \"/\" for multiplication!): ")
         solution = eval(equation)
         print(solution)
+def algebra():
+    equType = input("What type of equation would you like to solve? Type for a first degree equation in the form of ax + b = cx + d, or 2 for a quadratic equation for ax^2 + bx + c  = 0. ")
+    if equType == "1":
+        print(".")
