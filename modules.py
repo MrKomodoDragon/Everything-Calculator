@@ -1,6 +1,9 @@
 from matplotlib.pyplot import *
 from numpy import *
 import math
+import sys
+import 
+# Todo: add prompt for asking if they want to exit
 def graph():
     graphType = input("What kind of graph would you like: linear, quadratic, cubic, or quartic? Type 1 for linear, 2 for quadratic, 3 for cubic, or 4 for quartic. ")
     if graphType == "1":
@@ -28,6 +31,7 @@ def graph():
         plot(x,y)
         grid(b=True, which='major', color='#666666', linestyle='-')
         show()
+        sys.exit()
     elif formatType == "2":
         a = int(input("What is the value of the variable a in the equation y = a(x - h)² + k? "))
         h = int(input("What is the value of the variable h in the equation y = a(x - h)² + k? "))
@@ -38,6 +42,7 @@ def graph():
         plot(x,y)
         grid(b=True, which='major', color='#666666', linestyle='-')
         show()
+        sys.exit()
     elif graphType == "3":
         formatType = input("What format woud you like to enter the values for the function: ax³ + bx² + cx + d, a(x - h)³ + k, a(x-α)(x-β)(x-γ) or a(x-α)²(x-β)? Type 1 for the first option, 2 for the second option, 3 for the third option or 4 for the fourth option. ")
     range1 = int(input("What is the first number of the range? "))
@@ -53,6 +58,7 @@ def graph():
         plot(x,y)
         grid(b=True, which='major', color='#666666', linestyle='-')
         show()
+        sys.exit()
     if formatType == "2":
         a = int(input("What is the value of the variable a in the equation a(x - h)³ + k? "))
         h = int(input("What is the value of the variable h in the equation a(x - h)³ + k? "))
@@ -63,6 +69,7 @@ def graph():
         plot(x,y)
         grid(b=True, which='major', color='#666666', linestyle='-')
         show()
+        sys.exit()
     if formatType == "3":
         a = int(input("What is the value of the variable a in the equation a(x-α)(x-β)(x-γ)? "))
         aa = int(input("What is the value of the variable α in the equation a(x-α)(x-β)(x-γ)? "))
@@ -74,6 +81,7 @@ def graph():
         plot(x,y)
         grid(b=True, which='major', color='#666666', linestyle='-')
         show()
+        sys.exit()
     if formatType == "4":
         a = int(input("What is the value of the variable a in the equation a(x-α)²(x-β)? "))
         aa = int(input("What is the value of the variable α in the equation a(x-α)²(x-β)? "))
@@ -84,6 +92,7 @@ def graph():
         plot(x,y)
         grid(b=True, which='major', color='#666666', linestyle='-')
         show()
+        sys.exit()
     elif graphType == "4":
         formatType = input("What format would you like to enter the values for the function: ax⁴ + bx³ + cx² + dx + e, a(x - h)⁴ + k, a(x-α)(x-β)(x-γ)(x-δ), a(x-α)²(x-β)(x-γ), or a(x-α)³(x-β)? Type 1 for the first option, 2 for the second option, 3 for the third option, 4 for the fourth option, or 5 for the fifth option. ")
     range1 = int(input("What is the first number of the range? "))
@@ -100,6 +109,7 @@ def graph():
         plot(x,y)
         grid(b=True, which='major', color='#666666', linestyle='-')
         show()
+        sys.exit()
     if formatType == "2":
         a = int(input("What is the value of the variable a in the equation a(x - h)⁴ + k? "))
         h = int(input("What is the value of the variable h in the equation a(x - h)⁴ + k? "))
@@ -110,6 +120,7 @@ def graph():
         plot(x,y)
         grid(b=True, which='major', color='#666666', linestyle='-')
         show()
+        sys.exit()
     if formatType == "3":
         a = int(input("What is the value of the variable a in the equation a(x-α)(x-β)(x-γ)(x-δ)? "))
         aa = int(input("What is the value of the variable α in the equation a(x-α)(x-β)(x-γ)(x-δ)? "))
@@ -122,6 +133,7 @@ def graph():
         plot(x,y)
         grid(b=True, which='major', color='#666666', linestyle='-')
         show()
+        sys.exit()
     if formatType == "4":
         a = int(input("What is the value of the variable a in the equation a(x-α)²(x-β)(x-γ)? "))
         aa = int(input("What is the value of the variable α in the equation a(x-α)²(x-β)(x-γ)? "))
@@ -133,6 +145,7 @@ def graph():
         plot(x,y)
         grid(b=True, which='major', color='#666666', linestyle='-')
         show()
+        sys.exit()
     if formatType == "5":
         a = int(input("What is the value of the variable a in the equation a(x-α)³(x-β)? "))
         aa = int(input("What is the value of the variable α in the equation a(x-α)³(x-β)? "))
@@ -144,25 +157,53 @@ def graph():
         plot(x,y)
         grid(b=True, which='major', color='#666666', linestyle='-')
         show()
+        sys.exit()
 def basicTingz():
     optType = input("What operation would you like to do? Press 1 for addition, 2 for subtraction, 3 for multiplication, and 4 for division. ")
     if optType == "1":
         equation = input("Input your equation here (Make sure to use this sign \"+\" for addition!): ")
         solution = eval(equation)
         print(solution)
+        sys.exit()
     elif optType == "2":
         equation = input("Input your equation here (Make sure to use this sign \"-\" for subtraction!): ")
         solution = eval(equation)
         print(solution)
+        sys.exit()
     elif optType == "3":
         equation = input("Input your equation here (Make sure to use this sign \"*\" for multiplication!): ")
         solution = eval(equation)
         print(solution)
+        sys.exit()
     elif optType == "4":
         equation = input("Input your equation here (Make sure to use this sign \"/\" for multiplication!): ")
         solution = eval(equation)
         print(solution)
+        sys.exit()
 def algebra():
     equType = input("What type of equation would you like to solve? Type for a first degree equation in the form of ax + b = cx + d, or 2 for a quadratic equation for ax^2 + bx + c  = 0. ")
     if equType == "1":
-        print(".")
+       a = int(input("What is the value of a in ax + b = cx + d? "))
+       b = int(input("What is the value of a in ax + b = cx + d? "))
+       c = int(input("What is the value of a in ax + b = cx + d? "))
+       d = int(input("What is the value of a in ax + b = cx + d? "))
+       answer = (d - b)/(a - c)
+       print(answer)
+       sys.exit()
+    elif equType == "2":
+        a = int(input("Enter the coefficients of a: "))
+        b = int(input("Enter the coefficients of b: "))
+        c = int(input("Enter the coefficients of c: "))
+        d = b**2-4*a*c  # discriminant
+        if d < 0:
+            print("This equation has no real solution")
+        elif d == 0:
+            x = (-b+math.sqrt(b**2-4*a*c))/2*a
+            print("This equation has one solutions: "), x
+        else:
+            x1 = (-b+math.sqrt((b**2)-(4*(a*c))))/(2*a)
+            x2 = (-b-math.sqrt((b**2)-(4*(a*c))))/(2*a)
+            print("This equation has two solutions: ", x1, " or", x2)
+# def exit():
+  #  ans = input("Would you like to continue? ")
+  #  if ans == "y":
