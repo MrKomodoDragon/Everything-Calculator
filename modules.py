@@ -1,6 +1,6 @@
 from matplotlib.pyplot import *
 from numpy import *
-import math
+from math import *
 import sys
 # Todo: add prompt for asking if they want to exit
 def graph():
@@ -203,6 +203,33 @@ def algebra():
             x1 = (-b+math.sqrt((b**2)-(4*(a*c))))/(2*a)
             x2 = (-b-math.sqrt((b**2)-(4*(a*c))))/(2*a)
             print("This equation has two solutions: ", x1, " or", x2)
+def area():
+    shape = input("What Shape would you like to calculate the area of? Type 1 for circle, 2 for triangle and 3 for square and rectangle")
+    if shape == "1":
+        r = float(input("Input the radius of the circle : "))
+        print("The area of the circle with radius " + str(r) + " is: " + str(pi * r**2))
+    elif shape == "2":
+        type  = input("Type 1 for calculating the area of the triangle with the length of the 3 sides, or 2 for calculating the area of the triangle with the base and the height. ")
+        if type == "2":
+            base = int(input("What is the base of the Triangle? "))
+            height = int(input("What is the height of the Triangle? "))
+            area  = 0.5 * base * height
+            print(area)
+        elif type == "1":
+            a = int(input("Length of first side: "))
+            b = int(input("Length of second side: "))
+            c = int(input("Length of third side: "))
+            s = (a+b+c)/2
+            area = (s*(s-a)*(s-b)*(s-c)) ** 0.5
+            print(area)
+    elif shape == "3":
+        l = int(input("Length of the Rectangle or square: "))
+        w = int(input("width of the Rectangle or square: "))
+        area  = l*w
+        print(area)
+
+
+
 # def exit():
   #  ans = input("Would you like to continue? ")
   #  if ans == "y":
