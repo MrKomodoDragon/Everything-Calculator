@@ -4,7 +4,7 @@ from math import *
 import sys
 #Graph Function
 def graph():
-    graphType = input("What kind of graph would you like: linear, quadratic, cubic, or quartic? Type 1 for linear, 2 for quadratic, 3 for cubic, or 4 for quartic. ")
+    graphType = input("What kind of graph would you like? Here are the options: \n Type 1 for linear, \n 2 for quadratic, \n 3 for cubic, \n or 4 for quartic.\n\n Please type the corresponding number of the operation you would like to do: ")
     # Linear Graph
     if graphType == "1":
         range1 = float(input("What is the first number of the range? "))
@@ -179,7 +179,7 @@ def basicTingz():
         print(solution)
         sys.exit()
     elif optType == "4":
-        equation = input("Input your equation here (Make sure to use this sign \"/\" for multiplication!): ")
+        equation = input("Input your equation here (Make sure to use this sign \"/\" for division!): ")
         solution = eval(equation)
         print(solution)
         sys.exit()
