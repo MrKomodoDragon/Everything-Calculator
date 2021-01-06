@@ -160,7 +160,6 @@ def graph():
             a = float(input("What is the value of the variable a in the equation a(x-α)³(x-β)? "))
             aa = float(input("What is the value of the variable α in the equation a(x-α)³(x-β)? "))
             bb = float(input("What is the value of the variable β in the equation a(x-α)³(x-β)? "))
-            y = float(input("What is the value of the variable γ in the equation a(x-α)³(x-β)? "))
             x=linspace(range1,range2,5000)
             ylim([-50,50])
             y = a*((x-aa)**3)*(x-bb)
