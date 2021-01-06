@@ -60,6 +60,8 @@ Next, you should download the zip file. Click the green code button at the top o
 
 ![image](https://user-images.githubusercontent.com/74436682/103494228-a58b7c00-4dea-11eb-9063-a0436732630d.png)
 
+Then, extract the zip file.
+
 # Running the Script
 
 ## Linux and OS X
